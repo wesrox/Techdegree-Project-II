@@ -1,71 +1,113 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wesley Shieh Portfolio</title>
 <link rel="stylesheet" href="CSS/style.css">
-<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet"> </head>
+<link rel="stylesheet" href="CSS/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Biryani' rel='stylesheet'>
+</head>
+
 <body>
-  <div class="main-nav clearfix">
-    <h1 class="name"><a href="#">Wesley Shieh</a></h1>
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="news.html">News</a></li>
-      </ul>
+
+  <header class="main-header">
+      <h1 class="name"><a href="#">Wesley Shieh</a></h1>
+      <nav class = "main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#porto">Portfolio</a></li>
+        <li><a href="#contact-me">Contact</a></li>
+        <li><a href="#skill">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner clearfix">
+    <img src="images/responsive-layout-profile.png" alt="profile picture" class="profile-image">
+    <p> Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and I am excited to put all my skills to use!</p>
     </div>
 
-  <header>
-    <div=class="container clearfix">
-    <img src=images/responsive-layout-profile.png alt"profile picture" class="profile-image">
-    <p> Hi! I'm a front-end developer who loves responsive design and css.</p>
-    <p>I recently finished learning front-end web development at Treehouse an am excited to put all my skills to use!</p>
-    </div>
-  </header>
 
 <main>
-<div class="primary col">
-<div class="container">
-<ul>
-<figure><img src=images/portfolio-1.png alt"Marketing Page Image" class="portfolio-image"
-<li><figcaption>Marketing Page<br>
-This project shows the front page of a marketing website for a specific business I am interested in.</li></figcaption></figure>
-<figure><img src=images/portfolio-2.png alt"Search Page Image" class="portfolio-image"
-<li><figcaption>Search Page<br>
-This project searches through a specfic database to find information that the user is trying to look up.</li></figcaption></figure>
-<img src=images/portfolio-3.png alt"Travel Page Image" class="portfolio-image"
-<li><figcaption>Travel App<br>
-This project compares travel times based on different transportation methods and tells you the best one.</li></figcaption></figure>
-<ul>
+<div class="container clearfix">
+<h1 class="title">PORTFOLIO</h1>
+
+<div class="portfolio" id="porto">
+  <div class=primary-row>
+    <div class="marketing">
+<img src= "images/portfolio-1.png" alt="Marketing Page Image">
+<h1>Marketing Page</h1>
+<p>This project shows the front page of a marketing website for a specific business I am interested in.</p>
 </div>
 
-<div class="secondary-col">
-<ul>
-<figure><img src=images/portfolio-4.png alt"Map Page Image" class="portfolio-image"
-<li><figcaption>Map of Favorite Spots<br>
-This project uses mapping apis to plot points for my favorite spots in the city for a DIY walking tour.</li></figcaption></figure>
-<img src=images/portfolio-5.png alt"Photo Gallery Page Image" class="portfolio-image"
-<li><figcaption>Photo Gallery<br>
-This project shows pictures from a recent trip to the viewer and allows them to easily navigate the photos</li></figcaption></figure>
-<img src=images/portfolio-6.png alt"Calculator Page Image" class="portfolio-image"
-<li><figcaption>Calculator<br>
-Someone can enter in the numbers they want and press the big blue button and get the results</li></figcaption></figure>
+<div class="search">
+<img src="images/portfolio-2.png" alt="Search Page Image">
+<h1>Search Page</h1>
+<p>This project searches through a specfic database to find information that the user is trying to look up.</p>
+</div>
+
+<div class="travel">
+<img src="images/portfolio-3.png" alt="Travel Page Image">
+<h1>Travel App</h1>
+<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
 </div>
 </div>
+
+<div class="secondary row">
+<div class="map">
+<img src="images/portfolio-4.png" alt="Map Page Image">
+<h1>Map of Favorite Spots</h1>
+<p>This project uses mapping apis to plot points for my favorite spots in the city for a DIY walking tour.</p>
+</div>
+
+<div class="photo">
+<img src="images/portfolio-5.png" alt="Photo Gallery Page Image">
+<h1>Photo Gallery</h1>
+<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate the photos</p>
+</div>
+
+<div class="calculator">
+<img src="images/portfolio-6.png" alt="Calculator Page Image">
+<h1>Calculator</h1>
+<p>Someone can enter in the numbers they want and press the big blue button and get the results</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="skills clearfix" id="skill">
+        <div class="copywriting">
+          <img src="images/book.jpg" alt="Picture of Notebook">
+          <h1>Copywriting</h1>
+          <p>I have developed skills in writing efficient and marketable copy</p>
+        </div>
+      </div>
+
+
+
   </main>
 
 
-<footer>
-<div class="container">
+<footer class="main-footer" id="contact-me">
+<div class="contact">
 <h2>Contact</h2>
 <p>If you're interested in chatting or want more information about what I've been working on I'd love to hear from you!</p>
-
-<h3>Phone</h3>
-<p> +1 (111) 555-1234</p>
-
-<h3>Email</h3>
-<p> shiehwesley@gmail.com </p>
-</footer>
+<p>Phone +1 (111) 555-1234</p>
+<p>Email <a href="mailto:shiehwesley@gmail.com">shiehwesley@gmail.com</a></p>
 </div>
+
+<div class="bottom clearfix">
+    <h1 class="name"><a href="#">Wesley Shieh</a></h1>
+    <span><a href="#">Back to top </a></span>
+    <ul class="bottom-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#porto">Portfolio</a></li>
+      <li><a href="#contact-me">Contact</a></li>
+      <li><a href="#skill">Skills</a></li>
+      </ul>
+
+    </div>
+
+</footer>
 </body>
